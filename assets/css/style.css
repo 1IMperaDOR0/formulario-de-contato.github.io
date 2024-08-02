@@ -28,31 +28,25 @@ label {
 }
 input[type=text], input[type=email], input[type=submit] {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 10px;
     padding: 10px;
-    border: 1px solid #777;
+    border: 1.5px solid #666;
     border-radius: 8px;
 }
 input[type=text]:hover, input[type=email]:hover, textarea:hover {
-    border: 1px solid #0a7d69;
+    border: 1.5px solid #0a7d69;
 }
 input[type=email] {
     max-width: 478px;
 }
-input[type=radio] {
-    margin: 0 10px;
-}
-input[type=checkbox] {
-    margin-right: 10px;
-}
 input[type=submit] {
-    border: 1px solid #0a7d69;
+    border: 1.5px solid #0a7d69;
     background-color: #0a7d69;
     color: #fff;
     cursor: pointer;
 }
 input[type=submit]:hover {
-    border: 1px solid #064238;
+    border: 1.5px solid #064238;
     background-color: #064238;
 }
 .fullName {
@@ -74,8 +68,37 @@ input[type=submit]:hover {
     display: flex;
     align-items: center;
     padding: 9px;
-    border: 1px solid #777;
+    border: 1.5px solid #666;
     border-radius: 8px;
+    cursor: pointer;
+}
+.radio, .checkbox {
+    min-width: 15px;
+    min-height: 15px;
+    max-width: 15px;
+    max-height: 15px;
+    border: 1.5px solid #666;
+    margin-right: 10px;
+}
+.radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.radio.active{
+    border: 1.5px solid #0a7d69;
+}
+.option.active {
+    padding: 4.5px;
+    border-radius: 50%;
+    background-color: #0a7d69;
+}
+.checkbox.active{
+    background-image: url(../images/icon-checkbox-check.svg);
+    background-position: center;
+    border: 1.5px solid #0a7d69;
 }
 .consent {
     display: flex;
