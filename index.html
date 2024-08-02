@@ -16,11 +16,11 @@
             <div class="fullName">
                 <label for="firstName">
                     First Name <span>*</span><br/>
-                    <input type="text" name="firstName" required minlength="3"/>
+                    <input type="text" name="firstName" required minlength="3" pattern="[A-Za-z]+"/>
                 </label>
                 <label for="lastName">
                     Last Name <span>*</span><br/>
-                    <input type="text" name="lastName" required minlength="3"/>
+                    <input type="text" name="lastName" required minlength="3" pattern="[A-Za-z]+"/>
                 </label>
             </div>
             <label for="emailAddress">
@@ -44,7 +44,7 @@
                 Message <span>*</span><br/>
                 <textarea></textarea>
             </label>
-            <label class="consent"><input type="checkbox" required/> I consent to being contacted by the team <span>*</span></label>
+            <label class="consent"><input type="checkbox" required/><p>I consent to being contacted by the team <span>*</span></p></label>
             <input type="submit" value="Submit"/>
         </form>
     </div>

@@ -14,7 +14,7 @@ body {
 .contactUs {
     background-color: #fff;
     width: 500px;
-    height: 530px;
+    height: 100%;
     border-radius: 15px;
     padding: 30px;
 }
@@ -33,6 +33,9 @@ input[type=text], input[type=email], input[type=submit] {
     border: 1px solid #777;
     border-radius: 8px;
 }
+input[type=text]:hover, input[type=email]:hover, textarea:hover {
+    border: 1px solid #0a7d69;
+}
 input[type=email] {
     max-width: 478px;
 }
@@ -47,6 +50,10 @@ input[type=submit] {
     background-color: #0a7d69;
     color: #fff;
     cursor: pointer;
+}
+input[type=submit]:hover {
+    border: 1px solid #064238;
+    background-color: #064238;
 }
 .fullName {
     display: flex;
@@ -80,11 +87,27 @@ textarea {
     width: 478px; 
     height: 60px; 
     border-radius: 8px;
+    line-height: 20px;
 }
 span {
     color: #0a7d69;
 }
 
 @media (max-width: 609px) {
-    
+    .contactUs {
+        max-width: 242.5px;
+    }
+    input[type=email] {
+        max-width: 220.5px;
+    }
+    .fullName {
+        flex-direction: column;
+    }
+    .areaOptions {
+        flex-direction: column;
+    }
+    textarea {
+        width: 220.5px; 
+        height: 175px; 
+    }
 }
