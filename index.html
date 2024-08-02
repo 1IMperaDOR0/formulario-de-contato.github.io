@@ -16,26 +16,29 @@
             <div class="fullName">
                 <label for="firstName">
                     First Name <span>*</span><br/>
-                    <input type="text" name="firstName" required minlength="3" pattern="[A-Za-z]+"/>
+                    <input type="text" name="firstName"/>
+                    <!-- <input type="text" name="firstName" required minlength="3" pattern="[A-Za-z]+"/> -->
                 </label>
                 <label for="lastName">
                     Last Name <span>*</span><br/>
-                    <input type="text" name="lastName" required minlength="3" pattern="[A-Za-z]+"/>
+                    <input type="text" name="lastName"/>
+                    <!-- <input type="text" name="lastName" required minlength="3" pattern="[A-Za-z]+"/> -->
                 </label>
             </div>
             <label for="emailAddress">
                 Email Address <span>*</span><br/>
-                <input type="email" name="emailAddress" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/>
+                <input type="email" name="emailAddress"/>
+                <!-- <input type="email" name="emailAddress" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/> -->
             </label>
-            <label for="queryType">
+            <label>
                 Query Type <span>*</span><br/>
                 <div class="areaOptions">
                     <div class="options">
-                        <input type="radio" name="queryType" required value="General Enquiry"/>
+                        <div class="radio"><div class="option"></div></div>
                         General Enquiry
                     </div>
                     <div class="options"> 
-                        <input type="radio" name="queryType" required value="Support Request"/>
+                        <div class="radio active"><div class="option active"></div></div>
                         Support Request
                     </div>
                 </div>
@@ -44,7 +47,7 @@
                 Message <span>*</span><br/>
                 <textarea></textarea>
             </label>
-            <label class="consent"><input type="checkbox" required/><p>I consent to being contacted by the team <span>*</span></p></label>
+            <label class="consent"><div class="checkbox active"></div><div>I consent to being contacted by the team <span>*</span></div></label>
             <input type="submit" value="Submit"/>
         </form>
     </div>
