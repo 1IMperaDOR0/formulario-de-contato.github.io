@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', Arial;
+    outline: none;
+}
+body {
+    background-color: #e2f1e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+.contactUs {
+    background-color: #fff;
+    width: 500px;
+    height: 530px;
+    border-radius: 15px;
+    padding: 30px;
+}
+h1 {
+    font-size: 30px;
+}
+label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+input[type=text], input[type=email], input[type=submit] {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 8px;
+}
+input[type=email] {
+    max-width: 478px;
+}
+input[type=radio] {
+    margin: 0 10px;
+}
+input[type=checkbox] {
+    margin-right: 10px;
+}
+input[type=submit] {
+    border: 1px solid #0a7d69;
+    background-color: #0a7d69;
+    color: #fff;
+    cursor: pointer;
+}
+.fullName {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.fullName input {
+    width: 220.5px;
+}
+.areaOptions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 15px;
+}
+.options {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    border: 1px solid #777;
+    border-radius: 8px;
+}
+.consent {
+    display: flex;
+}
+textarea {
+    resize: none;
+    margin-top: 10px;
+    padding: 10px;
+    width: 478px; 
+    height: 60px; 
+    border-radius: 8px;
+}
+span {
+    color: #0a7d69;
+}
+
+@media (max-width: 609px) {
+    
+}
