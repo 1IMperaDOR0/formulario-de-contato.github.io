@@ -10,45 +10,51 @@
     <title>Formulário de Contato</title>
 </head>
 <body>
+    <div class="messageSent">
+        <b><div class="check"></div>Message Sent!</b><br/>
+        <p>Thanks for completing the form. We'll be touch soon!</p>
+    </div>
     <div class="contactUs">
         <h1>Contact Us</h1>
-        <form method="get">
+        <form method="POST" class="validator">
             <div class="fullName">
                 <label for="firstName">
                     First Name <span>*</span><br/>
-                    <input type="text" name="firstName"/>
+                    <input type="text" name="firstName" data-rules="required|min=3"/>
                     <!-- <input type="text" name="firstName" required minlength="3" pattern="[A-Za-z]+"/> -->
                 </label>
                 <label for="lastName">
                     Last Name <span>*</span><br/>
-                    <input type="text" name="lastName"/>
+                    <input type="text" name="lastName" data-rules="required|min=3"/>
                     <!-- <input type="text" name="lastName" required minlength="3" pattern="[A-Za-z]+"/> -->
                 </label>
             </div>
             <label for="emailAddress">
                 Email Address <span>*</span><br/>
-                <input type="email" name="emailAddress"/>
+                <input type="email" name="emailAddress" data-rules="required|email"/>
                 <!-- <input type="email" name="emailAddress" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/> -->
             </label>
-            <label>
+            <label for="radio">
                 Query Type <span>*</span><br/>
-                <div class="areaOptions">
-                    <div class="options">
-                        <div class="radio"><div class="option"></div></div>
-                        General Enquiry
-                    </div>
-                    <div class="options"> 
-                        <div class="radio active"><div class="option active"></div></div>
-                        Support Request
+                <div class="areaOptions" data-rules="required">
+                    <div class="areaOptionsStyle">
+                        <div name="radio" class="options">
+                            <div class="radio"><div class="option"></div></div>
+                            General Enquiry
+                        </div>
+                        <div name="radio" class="options"> 
+                            <div class="radio"><div class="option"></div></div>
+                            Support Request
+                        </div>
                     </div>
                 </div>
             </label>
             <label for="message">
                 Message <span>*</span><br/>
-                <textarea></textarea>
+                <textarea name="message" data-rules="required|min=11"></textarea>
             </label>
-            <label class="consent"><div class="checkbox active"></div><div>I consent to being contacted by the team <span>*</span></div></label>
-            <input type="submit" value="Submit"/>
+            <label for="checkbox"><div class="consent"><div name="checkbox" class="checkbox" data-rules="required"></div><div>I consent to being contacted by the team <span>*</span></div></div></label>
+            <input class="submit" type="submit" value="Submit"/>
         </form>
     </div>
     <script src="assets/js/script.js"></script>
