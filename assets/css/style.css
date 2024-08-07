@@ -11,6 +11,32 @@ body {
     justify-content: center;
     padding: 25px;
 }
+.messageSent {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    color: #fff;
+    background-color: #064238;
+    padding: 15px 25px;
+    margin-top: -535px;
+    border-radius: 8px;
+    line-height: 15px;
+    transition: all ease .5s;
+}
+b {
+    display: flex;
+    align-items: center;
+}
+p {
+    color: #ccc;
+}
+.check {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icon-success-check.svg);
+    background-position: center;
+    margin-right: 10px;
+}
 .contactUs {
     background-color: #fff;
     width: 500px;
@@ -18,13 +44,13 @@ body {
     border-radius: 15px;
     padding: 30px;
 }
-h1 {
-    font-size: 30px;
-}
 label {
     display: block;
     margin-bottom: 20px;
     font-size: 14px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=submit]:focus, textarea:focus {
+    border: 1.5px solid #0a7d69;
 }
 input[type=text], input[type=email], input[type=submit] {
     width: 100%;
@@ -52,12 +78,12 @@ input[type=submit]:hover {
 .fullName {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .fullName input {
     width: 220.5px;
 }
-.areaOptions {
+.areaOptionsStyle {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -72,12 +98,17 @@ input[type=submit]:hover {
     border-radius: 8px;
     cursor: pointer;
 }
+.options.active {
+    background-color: #d5eeea;
+    border: 1.5px solid #0a7d69;
+}
 .radio, .checkbox {
     min-width: 15px;
     min-height: 15px;
     max-width: 15px;
     max-height: 15px;
     border: 1.5px solid #666;
+    border-radius: 2px;
     margin-right: 10px;
 }
 .radio {
@@ -88,7 +119,7 @@ input[type=submit]:hover {
     border-radius: 50%;
 }
 .radio.active{
-    border: 1.5px solid #0a7d69;
+    border-color: #0a7d69;
 }
 .option.active {
     padding: 4.5px;
@@ -98,10 +129,11 @@ input[type=submit]:hover {
 .checkbox.active{
     background-image: url(../images/icon-checkbox-check.svg);
     background-position: center;
-    border: 1.5px solid #0a7d69;
+    border-color: #0a7d69;
 }
 .consent {
     display: flex;
+    cursor: pointer;
 }
 textarea {
     resize: none;
@@ -115,8 +147,18 @@ textarea {
 span {
     color: #0a7d69;
 }
+.error {
+    font-size: 10px;
+    color: #f00;
+    padding-top: 10px;
+}
 
 @media (max-width: 609px) {
+    .messageSent {
+        width: 200px;
+        margin-top: -780px;
+        
+    }
     .contactUs {
         max-width: 242.5px;
     }
@@ -126,7 +168,7 @@ span {
     .fullName {
         flex-direction: column;
     }
-    .areaOptions {
+    .areaOptionsStyle {
         flex-direction: column;
     }
     textarea {
