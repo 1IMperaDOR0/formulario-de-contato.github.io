@@ -65,7 +65,7 @@ let validator = {
     if(send) {
       validator.sendForm();
       setTimeout(() => {
-        form.submit();
+        form.reset(); // form.subit();
       }, 3500);
     }
   },
