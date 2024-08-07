@@ -99,7 +99,7 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 .options.active {
-    background-color: #d5eeea;
+    background-color: #e8f0fe;
     border: 1.5px solid #0a7d69;
 }
 .radio, .checkbox {
