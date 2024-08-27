@@ -1,13 +1,21 @@
+// Adicionando e removendo a active na class checkbox
 let checkbox = document.querySelector('.checkbox');
 checkbox.addEventListener('click', () => {
   checkbox.classList.toggle('active');
 });
 
+// Adicionando e removendo a active na class options, radio e option
 let areaOptions = document.querySelector('.areaOptions');
 
 areaOptions.addEventListener('click', (event) => {
   let target = event.target;
-  if(target.classList.contains('options')) {
+  let optionsElement;
+  if (target.classList.contains('options')) {
+    optionsElement = target;
+  } else {
+    optionsElement = target.closest('.options');
+  }
+  if (optionsElement) {
     let options = areaOptions.querySelectorAll('.options');
     options.forEach((option) => {
       option.classList.remove('active');
@@ -16,14 +24,19 @@ areaOptions.addEventListener('click', (event) => {
       let optionElement = option.querySelector('.option');
       optionElement.classList.remove('active');
     });
-    target.classList.add('active');
-    let selectedRadio = target.querySelector('.radio');
-    selectedRadio.classList.add('active');
-    let selectedOption = target.querySelector('.option');
-    selectedOption.classList.add('active');
+    optionsElement.classList.add('active');
+    let selectedRadio = optionsElement.querySelector('.radio');
+    if (selectedRadio) {
+      selectedRadio.classList.add('active');
+    }
+    let selectedOption = optionsElement.querySelector('.option');
+    if (selectedOption) {
+      selectedOption.classList.add('active');
+    }
   }
 });
 
+// Definindo o objeto validador para o formulário
 let validator = {
   handleSubmit: (event) => {
     event.preventDefault();
