@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![descktop-design](assets/images/descktop-design.jpg)
+![descktop-design](assets/images/desktop-design.jpg)
 
 ![mobile-design-up](assets/images/mobile-design-up.jpeg)
 
