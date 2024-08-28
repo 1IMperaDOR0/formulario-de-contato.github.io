@@ -9,7 +9,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 .messageSent {
     display: none;
@@ -43,6 +45,7 @@ p {
     height: 100%;
     border-radius: 15px;
     padding: 30px;
+    margin: 25px 0;
 }
 label {
     display: block;
