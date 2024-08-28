@@ -33,9 +33,9 @@ Users should be able to:
 ### Screenshot
 
 ![descktop-design](assets/images/descktop-design.jpg)
-![mobile-design-up](assets/images/mobile-design-up.jpg)
-![mobile-design-center](assets/images/mobile-design-center.jpg)
-![mobile-design-down](assets/images/mobile-design-down.jpg)
+![mobile-design-up](assets/images/mobile-design-up.jpeg)
+![mobile-design-center](assets/images/mobile-design-center.jpeg)
+![mobile-design-down](assets/images/mobile-design-down.jpeg)
 ![hover-state](assets/images/hover-state.jpg)
 ![focus-and-active-state](assets/images/focus-and-active-state.jpg)
 ![error-state](assets/images/error-state.jpg)
