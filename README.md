@@ -56,7 +56,7 @@ Users should be able to:
 ### Created with
 
 - Markup languages ​​(HTML5 and CSS3)
-- Semantic structure
+- Form tags
 - Flexbox and responsiveness
 - Images used (add-links)
 - Programming language (JavaScript)
@@ -66,7 +66,7 @@ Users should be able to:
 ### What I learned
 
 In HTML, I learned:
-- How to structure a form with semantic tags like <form>, <label>, <input> and <textarea>.
+- How to structure a form tags like <form>, <label>, <input> and <textarea>.
 - How to use attributes like data-rules to store validation information in an organized and readable way.
 - How to use rel="preconnect" to optimize the loading of external fonts and rel="shortcut icon" to add a custom icon to the browser.
 
